@@ -9,6 +9,8 @@ def isPrime(num):
     else:
         return False
 
-for count in range(0,10):
+
+number=int(input("Type a number: "))
+for count in range(0,number):
     if isPrime(count):
         print(count,end=',')
