@@ -5,7 +5,7 @@ while (x<2):
     print("This is our string: "+str)
     rm_character = input("What do you want to remove: ")
     if rm_character in str:
-        str=str.replace(wanted_character,'')
+        str=str.replace(rm_character ,'')
         print(str)
     else:
         print("Not Found")
