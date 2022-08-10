@@ -1,0 +1,50 @@
+Q1-A:
+
+str=('Life is not good')
+
+x=1
+while (x<2):
+    print("This is our string: "+str)
+    wanted_character = input("What do you want to remove: ")
+    if wanted_character in str:
+        str=str.replace(wanted_character,'')
+        print(str)
+    else:
+        print("Not Found")
+
+Q2-A:
+
+#Note that I cheated at this one :/
+def isPrime(num):
+    if num>1:
+        for count in range(2,int(pow(num,(1/2)))):
+            if not(num%count):
+                return False
+                break
+        return True
+    else:
+        return False
+
+for count in range(0,10):
+    if isPrime(count):
+        print(count,end=',')
+
+Q3-A:
+
+def Char_Count(char,str):
+
+    str=input("Type some words: ")
+    x = 1
+    while (x < 2):
+        char=input("Which character you want to count: ")
+
+        count=0
+        for a in range(len(str)):
+            if char in str[a]:
+                count=count+1
+
+        print(char+':',count)
+
+word=''
+Char=''
+Char_Count(Char,word)
